@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Setting the title in the tab area as well as linking the style sheets-->
+    <title>Roller</title>
+    <link rel="stylesheet" href="/stylesheet/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--The navagation bar and heading at the top of each page-->
+    <h1>UK Blinds</h1>
+    <div id="navcenter">
+        <div id="navbar">
+            <nav id="navigation">
+                <a href="/Homepage">Homepage</a>
+                <a href="/Blinds">Choose a Blind</a>
+                <a href="/Logout">Logout</a>
+                <a href="/Booking">Booking</a>
+                <a href="/PreviousOrder">Previous Orders</a>
+                <a href="/Details">Details</a>
+                <a href="/PreviousBookings">Previous Bookings</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <section id="form">
+
+        <!--The form for making an order for a Roller type blind-->
+        <h2>Roller</h2>
+        <form action="/Blind" id="blind" method="POST">
+            <p>
+                <label for="type">Choose your type:</label>
+                <select name="type" id="type">
+                  <option value="roller">roller</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="length">Enter the window length (in cm):</label>
+                <input type="number" placeholder="Length" id="length" required name="length">
+            </p>
+
+            <p>
+                <label for="width">Enter the window width (in cm):</label>
+                <input type="number" placeholder="Width" id="width" required name="width">
+            </p>
+
+            <p>
+                <label for="colour">Enter the roller blind colour:</label>
+                <input type="color" id="colour" required name="colour">
+            </p>
+
+            <p>
+                <label for="material">Choose your material:</label>
+                <select name="material" id="material">
+                  <option value="fabric">fabric</option>
+                </select>
+            </p>
+
+            <h4><b>Price in pounds:</b></h4>
+            <h5></h5>
+
+            <button>Submit</button>
+
+        </form>
+
+    </section>
+
+    <!--Footer containing links to social media pages-->
+    <footer>
+        <a href="https://instagram.com">
+            <img src="/Images/Instagram.jpg" width="200" height="200">
+        </a>
+        <a href="https://snapchat.com">
+            <img src="/Images/snapchat.png" width="200" height="200">
+        </a>
+    </footer>
+
+    <script src="/Script.js"></script>
+
+</body>
+
+</html>

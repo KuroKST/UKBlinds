@@ -1,0 +1,161 @@
+h1 {
+    font-family: redressed, sans-serif;
+    padding: 60px;
+    color: black;
+    background-color: #caf0f8;
+    font-size: 60px;
+    border-radius: 25px;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+body {
+    background: #ade8f4;
+    text-align: center;
+    background-size: cover;
+    color: black;
+    font-family: dosis, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0%;
+}
+
+h5 {
+    color: black;
+}
+
+h4 {
+    color: black;
+}
+
+h3 {
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+#navbar {
+    background-color: #3d405b;
+    border-radius: 25px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#navcenter {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+#intro {
+    font-size: 40px;
+}
+
+button {
+    margin-bottom: 20px;
+    color: midnightblue;
+    background: none;
+    border-style: solid;
+}
+
+img {
+    border-radius: 25px;
+    align-content: center;
+}
+
+button:hover {
+    border-color: orangered;
+    color: deepskyblue;
+    box-shadow: 0 0.5em 0.5em --0.4em orangered;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#form {
+    margin-top: 15px;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px black;
+    border-style: inset double double inset;
+    border-radius: 25px;
+    background-color: white;
+    font-family: dosis, sans-serif;
+}
+
+#aboutus {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: white;
+    width: 50%;
+    padding-right: 0px;
+    border-radius: 25px;
+}
+
+#aboutus img {
+    border-radius: 25px;
+}
+
+#abouttext {
+    color: black;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+#abouttext h2 {
+    text-decoration: underline;
+}
+
+#aboutcenter {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 4 rem;
+    }
+    h2 {
+        font-size: 3 rem;
+    }
+}
+
+@media(max-width: 515px) {
+    nav {
+        flex-direction: column;
+    }
+}

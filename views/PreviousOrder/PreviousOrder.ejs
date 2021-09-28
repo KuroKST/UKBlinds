@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Setting the title in the tab area as well as linking the style sheets-->
+    <title>Previous Orders</title>
+    <link rel="stylesheet" href="/stylesheet/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--The navagation bar and heading at the top of each page-->
+    <h1>UK Blinds</h1>
+    <div id="navcenter">
+        <div id="navbar">
+            <nav id="navigation">
+                <a href="/Homepage">Homepage</a>
+                <a href="/Blinds">Choose a Blind</a>
+                <a href="/Logout">Logout</a>
+                <a href="/Booking">Booking</a>
+                <a href="/Details">Details</a>
+                <a href="/PreviousBookings">Previous Bookings</a>
+            </nav>
+        </div>
+    </div>
+
+    <section>
+        <!--Cycles through all the previous orders and displays all the information in order-->
+        <h2>Previous Orders</h2>
+        <ul>
+            <% for (let order of orders) { %>
+                <li>
+                    id:
+                    <%= order.id %>
+                </li>
+                <li>
+                    Type:
+                    <%= order.type %>
+                </li>
+                <li>
+                    Length:
+                    <%= order.length %>
+                </li>
+                <li>
+                    Width:
+                    <%= order.width %>
+                </li>
+                <li>
+                    Colour:
+                    <%= order.colour %>
+                </li>
+                <li>
+                    Material:
+                    <%= order.material %>
+                </li>
+
+
+                <%} %>
+        </ul>
+    </section>
+
+    <!--Footer containing links to social media pages-->
+    <footer>
+        <a href="https://instagram.com">
+            <img src="/Images/Instagram.jpg" width="200" height="200">
+        </a>
+        <a href="https://snapchat.com">
+            <img src="/Images/snapchat.png" width="200" height="200">
+        </a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Setting the title in the tab area as well as linking the style sheets-->
+    <title>UK BLINDS</title>
+    <link rel="stylesheet" href="/stylesheet/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--The navagation bar and heading at the top of each page-->
+    <h1>UK Blinds</h1>
+    <div id="navcenter">
+        <div id="navbar">
+            <nav id="navigation">
+                <a href="/Blinds">Choose a Blind</a>
+                <% if(!userId) {%>
+                    <a href="/Login">Login</a>
+                    <a href="/Register">Register</a>
+                    <% } else{%>
+                        <a href="/Logout">Logout</a>
+                        <a href="/Booking">Booking</a>
+                        <a href="/PreviousOrder">Previous Orders</a>
+                        <a href="/Details">Details</a>
+                        <a href="/PreviousBookings">Previous Bookings</a>
+                        <% } %>
+            </nav>
+        </div>
+    </div>
+    <!--The homepage of the clients website-->
+    <h3><b>Made to measure delivered right to your door step</b></h3>
+    <section id="aboutcenter">
+        <div id=aboutus>
+            <div id=abouttext>
+                <h2>About us</h2>
+                <p>We have been providing blinds to UK Households since 2000. We are the number one choice for your blinds needs at reasonable prices.</p>
+            </div>
+            <img src=" /Images/HomepageImage.jpg" alt="">
+        </div>
+    </section>
+
+    <!--Footer containing links to social media pages-->
+    <footer>
+        <a href="https://instagram.com">
+            <img src="/Images/Instagram.jpg" width="200" height="200">
+        </a>
+        <a href="https://snapchat.com">
+            <img src="/Images/snapchat.png" width="200" height="200">
+        </a>
+    </footer>
+
+</body>
+
+</html>

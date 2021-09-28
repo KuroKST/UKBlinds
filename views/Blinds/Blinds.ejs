@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Setting the title in the tab area as well as linking the style sheets-->
+    <title>Choose a Blind</title>
+    <link rel="stylesheet" href="/stylesheet/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--The navagation bar and heading at the top of each page-->
+    <h1>UK Blinds</h1>
+    <div id="navcenter">
+        <div id="navbar">
+            <nav id="navigation">
+                <a href="/Homepage">Homepage</a>
+                <% if(!userId) {%>
+                    <a href="/Login">Login</a>
+                    <a href="/Register">Register</a>
+                    <% } else{%>
+                        <a href="/Logout">Logout</a>
+                        <a href="/PreviousOrder">Previous Orders</a>
+                        <a href="/Details">Details</a>
+                        <a href="/Booking">Booking</a>
+                        <a href="/PreviousBookings">Previous Bookings</a>
+                        <% } %>
+            </nav>
+        </div>
+    </div>
+
+    <section>
+
+        <!--Displays a picture and links to the different types of blinds-->
+        <h2>Choose a blind</h2>
+        <div>
+
+            <a href="/Curtains">
+                <img src="/Images/curtains.jpg">
+                <p>
+                    <a href="/Curtains">Curtains</a>
+                </p>
+            </a>
+
+
+            <a href="/Roller">
+                <img src="/Images/roller.jpg">
+                <p>
+                    <a href="/Roller">Roller</a>
+                </p>
+            </a>
+
+
+
+            <a href="/Venetian">
+                <img src="/Images/venetian.jpg">
+                <p>
+                    <a href="/Venetian">Venetain</a>
+                </p>
+            </a>
+
+
+
+            <a href="/Vertical">
+                <img src="/Images/vertical.jpg">
+                <p>
+                    <a href="/Vertical">Vertical</a>
+                </p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--Footer containing links to social media pages-->
+    <footer>
+        <a href="https://instagram.com">
+            <img src="/Images/Instagram.jpg" width="200" height="200">
+        </a>
+        <a href="https://snapchat.com">
+            <img src="/Images/snapchat.png" width="200" height="200">
+        </a>
+    </footer>
+
+</body>
+
+</html>
